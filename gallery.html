@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=CMU+Serif&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=CMU+Serif&display=swap" rel="stylesheet"/>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <title>Michael’s Website</title>
   <style>
     body {
       font-family: "CMU Serif", serif;
+      background-color: #fdfdfd;
+      margin: 0;
     }
-    
+
     .container {
       max-width: 800px;
       margin: 2rem auto;
@@ -22,7 +23,7 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
       border-radius: 8px;
     }
-    
+
     .navbar {
       background-color: #65805e;
       color: white;
@@ -53,14 +54,45 @@
     }
 
     .content {
-      padding: 2rem;
+      padding: 2rem 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      justify-items: center;
+    }
+
+    .gallery-item {
+      text-align: center;
+    }
+
+    .gallery-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-title {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    /* Optional: responsive gallery if you add more images later */
+    @media (min-width: 600px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-      <div class="navbar">
-      <div class="title">projects</div>
+    <div class="navbar">
+      <div class="title">gallery</div>
       <div class="nav-links">
         <a href="index.html">home</a>
         <a href="profile.html">about</a>
@@ -70,12 +102,16 @@
     </div>
 
     <div class="content">
-    <p align="center" ><img src="images/circles.png" width="500" height="400"></p>
-    <p align="center" >circles (2023)</p>
-    <div style="display: flex; justify-content: center;">
-        <img src="images/perlinslice.png"">
-    </div>
-    <p align="center" >fractal noise (2024)</p>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="images/circles.png" alt="circles" class="gallery-img" width="500" height="400">
+          <div class="gallery-title">circles (2023)</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/perlinslice.png" alt="fractal noise" class="gallery-img" width="500" height="400">
+          <div class="gallery-title">fractal noise (2024)</div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
