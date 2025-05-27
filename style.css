@@ -61,3 +61,41 @@ body {
     font-size: 0.95rem;
   }
 }
+
+    .project {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      align-items: flex-start;
+    }
+    
+    .project-img {
+      width: 120px;
+      height: auto;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    
+    .project-info h2 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    
+    .project-info a {
+      color: #334;
+      text-decoration: none;
+    }
+    
+    .project-info a:hover {
+      text-decoration: underline;
+    }
+    
+    .project-info p {
+      margin: 0.5rem 0 0 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .content {
+      padding: 2rem;
+    }
