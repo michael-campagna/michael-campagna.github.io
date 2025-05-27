@@ -13,6 +13,7 @@
     body {
       font-family: "CMU Serif", serif;
     }
+    
     .container {
       max-width: 800px;
       margin: 2rem auto;
@@ -51,7 +52,40 @@
       text-decoration: underline;
     }
 
-    /* Optional: For some spacing on the page */
+    .project {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      align-items: flex-start;
+    }
+    
+    .project-img {
+      width: 120px;
+      height: auto;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    
+    .project-info h2 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    
+    .project-info a {
+      color: #334;
+      text-decoration: none;
+    }
+    
+    .project-info a:hover {
+      text-decoration: underline;
+    }
+    
+    .project-info p {
+      margin: 0.5rem 0 0 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
     .content {
       padding: 2rem;
     }
@@ -60,21 +94,50 @@
 <body>
   <div class="container">
     <div class="navbar">
-    <div class="title">projects</div>
-    <div class="nav-links">
-      <a href="index.html">home</a>
-      <a href="profile.html">about</a>
-      <a href="projects.html">projects</a>
-      <a href="gallery.html">gallery</a>
+      <div class="title">projects</div>
+      <div class="nav-links">
+        <a href="index.html">home</a>
+        <a href="profile.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="gallery.html">gallery</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="project">
+        <img src="images/circles.png" alt="LAPD Plasma" class="project-img">
+        <div class="project-info">
+          <h2><a href="wmplasma.html">LAPD Plasma Analysis</a></h2>
+          <p>analyzing turbulence in the Large Plasma Device</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="images/circles.png" alt="waveform.ai" class="project-img">
+        <div class="project-info">
+          <h2><a href="synth.html">waveform.ai</a></h2>
+          <p>designing and building a machine-learning integrated analog synthesizer</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="images/circles.png" alt="Stochastic Mechanics" class="project-img">
+        <div class="project-info">
+          <h2><a href="sm.html">Stochastic Mechanics</a></h2>
+          <p>simulating atomic transitions using a non-standard stochastic approach
+          towards validating a promising new picture of quantum gravity </p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="images/2dslice.png" alt="Optical Turbulence" class="project-img">
+        <div class="project-info">
+          <h2><a href="xlumin.html">Optical Turbulence Modeling</a></h2>
+          <p>developing a new method for simulating atmospheric optical turbulence using fractal noise</p>
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="content">
-    <p><a href="wmplasma.html">LAPD Plasma Analysis</a></p>
-    <p><a href="synth.html">waveform.ai</a></p>
-    <p><a href="sm.html">Stochastic Mechanics</a></p>
-    <p><a href="xlumin.html">Optical Turbulence Modeling</a></p>
-  </div>
-  </div>
 </body>
+
 </html>
