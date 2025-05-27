@@ -3,16 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=CMU+Serif&display=swap" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
   <title>Michael’s Website</title>
   <style>
-    img {
-      text-align: center;
-      max-width: 100%;
-      height: auto;
+    body {
+      font-family: "CMU Serif", serif;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+      border-radius: 8px;
+    }
+    
+    .navbar {
+      background-color: #65805e;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      padding: 2rem;
     }
   </style>
 </head>
 <body>
+  <div">
     <p><a href="index.html">return</a></p>
     <p align="center" ><img src="images/circles.png" width="500" height="400"></p>
     <p align="center" >circles (2023)</p>
@@ -20,5 +66,6 @@
         <img src="images/2dslice.png" style="transform: translateX(-10px);">
     </div>
     <p align="center" >fractal noise (2024)</p>
+  </div>
 </body>
 </html>
