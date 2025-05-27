@@ -22,7 +22,7 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
       border-radius: 8px;
     }
-    
+
     .navbar {
       background-color: #65805e;
       color: white;
@@ -30,16 +30,30 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
-
-    .navbar .title {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
+    
     .nav-links {
       display: flex;
-      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 0.5rem;
+      width: 100%;
+    }
+    
+    @media (max-width: 600px) {
+      .navbar .title {
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+    
+      .nav-links {
+        gap: 0.75rem;
+        font-size: 0.95rem;
+      }
     }
 
     .nav-links a {
@@ -105,7 +119,7 @@
 
     <div class="content">
       <div class="project">
-        <img src="images/circles.png" alt="LAPD Plasma" class="project-img">
+<!--         <img src="images/circles.png" alt="LAPD Plasma" class="project-img"> -->
         <div class="project-info">
           <h2><a href="wmplasma.html">LAPD Plasma Analysis</a></h2>
           <p>analyzing turbulence in the Large Plasma Device</p>
