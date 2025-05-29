@@ -37,9 +37,11 @@
         to study magnetic confinement concepts, I thought it might be helpful to produce a visual guide.
         This exposition follows the one found in [1], and assumes some familiarity with vector calculus. 
       </p>
-      <h2>Coordinate systems in $\mathbf{R}^3$</h2>
-      <p>A coordinate system $(x_1, x_2, x_3)$ provides a method to parameterize a point $\mathbf{r} \in \mathbf{R^3}$.
-        There exists a bijective function $\mathcal{R}$ such that $\mathbf{r}=\mathcal{R}(x_1, x_2, x_3)$.
+      <h2>Coordinate systems in $\mathbb{R}^3$</h2>
+      <p>A coordinate system $\mathcal{C}=(x_1, x_2, x_3)$ provides a method to parameterize a point $\mathbf{r} \in \mathbb{R^3}$.
+        There exists a bijective function $\mathcal{R}$ such that $\mathbf{r}=\mathcal{R}(x_1, x_2, x_3)$. It follows that
+        for any function $f$ over $\mathbb{R}^3$ there exists a function $f_\mathcal{C}$ such that $f(\mathbf{r}) = 
+        f_\mathcal{C}(x_1, x_2, x_3)$ (in particular, $f_\mathcal{C} = f \circ \mathcal{R}$).
         
       </p>
       <h2>References</h2>
