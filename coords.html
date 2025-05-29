@@ -36,7 +36,8 @@
       <p>
         In my path to a better understanding of the various magnetic coordinate systems which exist
         to study magnetic confinement concepts, I thought it might be helpful to produce a visual guide.
-        This exposition follows the one found in [1], and assumes some familiarity with vector calculus. 
+        This exposition closely follows the one found in [1], and assumes some familiarity with linear algebra
+        and vector calculus. 
       </p>
       <p>
         <i>
@@ -48,13 +49,14 @@
       <p>
         A coordinate system $\mathcal{C}=(x_1, x_2, x_3)$ provides a method to parameterize a point $\mathbf{r} \in \mathbb{R}^3$.
         There exists a bijective function $\mathcal{R}$ such that $\mathbf{r}=\mathcal{R}(x_1, x_2, x_3)$. It follows that
-        for any function $f$ over $\mathbb{R}^3$ there exists a function $f_\mathcal{C}$ such that $f(\mathbf{r}) = 
-        f_\mathcal{C}(x_1, x_2, x_3)$ (in particular, $f_\mathcal{C} = f \circ \mathcal{R}$). Note also that each of our coordinates
+        for any function $f$ over $\mathbb{R}^3$ there exists a function $f_\mathcal{C} = f \circ \mathcal{R}$ such that $f(\mathbf{r}) = 
+        f_\mathcal{C}(x_1, x_2, x_3)$. Note also that each of our coordinates
         $(x_1, x_2, x_3)$ can be individually cast as a functional from $\mathbb{R}^3 \rightarrow \mathbb{R}$.
       </p>
       <p>
-        As an example, the toroidal setting of most magnetic confinement configurations is well-described most familiarly by
-        cylindrical coordinates.
+        As an example, the toroidal setting of most magnetic confinement configurations is naturally parameterized
+        cylindrical coordinates $(R, \phi, z)$. 
+        
       </p>
       <h2>References</h2>
       <p>[1]  LM. Imbert-Gerard, E. J. Paul, A. M. Wright, <i>An Introduction to Stellarators</i></p>
